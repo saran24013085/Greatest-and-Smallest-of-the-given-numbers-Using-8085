@@ -20,26 +20,27 @@ To write 8085 microprocessor programs to find the greatest and smallest number f
 6.	Store the greatest number in 4300H.
 
 ## Program:
-```
-LDA 4200H
-MOV C,A
-LXI H,4201H
-MOV A,M
-INX H
-DCR C
-LOOP:CMP M
-JNC NEXT
-MOV A,M
-NEXT:INX H
-DCR C
-JNZ LOOP
-STA 4300H
+LDA 4200H 
+MOV C, A  
+LXI H, 4201H  
+MOV A, M 
+INX H  
+DCR C  
+LOOP: CMP M  
+JNC NEXT 
+MOV A,M  
+NEXT: INX H  
+DCR C 
+JNZ LOOP  
+STA 4300H 
 HLT
-```
+
+
+
 
 ## Output:
-<img width="1821" height="867" alt="image" src="https://github.com/user-attachments/assets/06895865-c157-4bdc-aefd-598217a027d8" />
-<img width="1846" height="854" alt="image" src="https://github.com/user-attachments/assets/1d59ceb1-4eed-47ee-90e2-8a792beb8045" />
+<img width="1871" height="1024" alt="Screenshot 2026-02-13 160946" src="https://github.com/user-attachments/assets/fffb401e-c907-4456-bdb4-11092a49f715" />
+<img width="1878" height="1018" alt="Screenshot 2026-02-13 161010" src="https://github.com/user-attachments/assets/fcfedfce-5582-4774-acef-d0ff656cc4dc" />
 
 
 ## Finding the Smallest Number
@@ -54,26 +55,25 @@ HLT
 6.	Store the smallest number in 4301H.
 
 ## Program:
-```
-LDA 4200H
-MOV C,A
-LXI H,4201H
-MOV A,M
-INX H
-DCR C
-LOOP:CMP M
-JC NEXT
-MOV A,M
-NEXT:INX H
-DCR C
-JNZ LOOP
-STA 4301H
+
+LDA 4200H 
+MOV C, A 
+LXI H, 4201H 
+MOV A, M 
+INX H 
+DCR C  
+LOOP: CMP M 
+JC NEXT 
+MOV A,M 
+NEXT: INX H 
+DCR C 
+JNZ LOOP 
+STA 4300H 
 HLT
-```
 
 ## Output:
-<img width="1806" height="784" alt="image" src="https://github.com/user-attachments/assets/ef62b564-b764-468a-9aaa-fa085693669e" />
-<img width="1817" height="764" alt="image" src="https://github.com/user-attachments/assets/5f0f0ae6-1663-4b3a-a3ea-1b00d07016fa" />
+<img width="1882" height="1023" alt="Screenshot 2026-02-13 161058" src="https://github.com/user-attachments/assets/79d5c673-a6ca-4f0b-bc8d-01a94d538f7b" />
+<img width="1873" height="1013" alt="Screenshot 2026-02-13 161211" src="https://github.com/user-attachments/assets/3225c293-0168-4cbd-b707-97dc7907f7d7" />
 
 
 
